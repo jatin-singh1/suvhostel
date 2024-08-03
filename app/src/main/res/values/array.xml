@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="complaint_types">
+        <item>Room issue</item>
+        <item>Roommate bully</item>
+        <item>Cleanliness problem</item>
+        <item>Staff not coordinating</item>
+        <item>Other complaint</item>
+    </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dahsboard"
+    tools:context=".Leave_form">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT LEAVE TYPE"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinnerLeaveType"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:tooltipText="Select Leave Type"
+        tools:ignore="HardcodedText">
+        <requestFocus />
+    </Spinner>
+
+    <DatePicker
+        android:id="@+id/startDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/spinnerLeaveType"
+        android:layout_marginTop="13dp"
+        android:datePickerMode="spinner" />
+
+    <DatePicker
+        android:id="@+id/endDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/startDatePicker"
+        android:layout_marginTop="5dp"
+        android:datePickerMode="spinner" />
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endDatePicker"
+        android:layout_marginTop="20dp"
+        android:hint="Add a Comment" />
+
+    <Button
+        android:id="@+id/buttonsbmit"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_below="@+id/endDatePicker"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="#FCEDFF"
+        android:text="Submit"
+        android:textColor="@color/lightpurp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

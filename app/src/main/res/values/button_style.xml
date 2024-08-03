@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button4">
+    </style>
+    <style name="Button5">
+        <item name="android:background">@color/purple</item>
+    </style>
+</resources>

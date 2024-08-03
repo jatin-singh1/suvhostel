@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".room_form"
+    >
+
+    <Spinner
+        android:id="@+id/spinnerReason"
+        android:layout_width="379dp"
+        android:layout_height="50dp"
+        android:prompt="@string/select_reason" />
+
+    <EditText
+        android:id="@+id/editTextRoomChange"
+        android:layout_width="379dp"
+        android:layout_height="73dp"
+        android:hint="Enter Room Change Details" />
+
+    <EditText
+        android:id="@+id/editTextRoommateChange"
+        android:layout_width="381dp"
+        android:layout_height="82dp"
+        android:hint="Enter Roommate Change Details" />
+
+    <Button
+        android:id="@+id/buttonSubmit1"
+        android:layout_width="385dp"
+        android:layout_height="67dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textColor="@color/lightpurp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

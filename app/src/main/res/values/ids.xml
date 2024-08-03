@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Corrected item definition -->
+    <item name="message" type="id"/>
+    <item name="motion_base" type="id"/>
+    <item name="view_transition" type="id"/>
+</resources>

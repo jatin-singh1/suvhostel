@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dahsboard"
+    tools:context=".Leave_submitted_successfully">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="333dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="98dp"
+        android:drawableTop="@drawable/round_done_outline_24"
+        android:gravity="center"
+        android:text="Leave Submitted Successfully"
+        android:textColor="@color/lightpurp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chckstat1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chckstat1"
+        android:layout_width="342dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="340dp"
+        android:drawableTop="@drawable/baseline_donut_large_24"
+        android:gravity="center"
+        android:text="Check Status"
+        android:textColor="@color/lightpurp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

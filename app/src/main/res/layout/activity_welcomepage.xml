@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dahsboard"
+    tools:context=".welcomepage">
+
+
+    <LinearLayout
+        android:id="@+id/applyforleave1"
+        android:layout_width="126dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/baseline_apply_leave_24"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/complaint"
+        app:layout_constraintEnd_toStartOf="@+id/complaint2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice" />
+
+    <TextView
+        android:id="@+id/leave"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="@string/apply_for_leave"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/applyforleave1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/applyforleave1"
+        app:layout_constraintTop_toTopOf="@+id/applyforleave1" />
+
+    <LinearLayout
+        android:id="@+id/forum3"
+        android:layout_width="134dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/baseline_forum_24"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/forum"
+        app:layout_constraintEnd_toEndOf="@+id/forum"
+        app:layout_constraintEnd_toStartOf="@+id/lostnf4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leave"
+        app:layout_constraintVertical_bias="0.636">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roomchange5"
+        android:layout_width="133dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/baseline_room_preferences_24"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/roomchange"
+        app:layout_constraintEnd_toStartOf="@+id/feesdetails6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forum"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/complaint2"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="243dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/baseline_complaint_24"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lostnf4"
+        app:layout_constraintEnd_toEndOf="@+id/notice"
+        app:layout_constraintStart_toStartOf="@+id/notice"
+        app:layout_constraintTop_toBottomOf="@+id/notice" />
+
+    <TextView
+        android:id="@+id/complaint"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/raise_complaint"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/complaint2"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@+id/leave"
+        app:layout_constraintTop_toBottomOf="@+id/complaint2" />
+
+    <LinearLayout
+        android:id="@+id/lostnf4"
+        android:layout_width="125dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/outline_lost_24"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lostnf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forum3"
+        app:layout_constraintTop_toBottomOf="@+id/complaint2" />
+
+    <TextView
+        android:id="@+id/lostnf"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="@string/los"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/feesdetails6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forum"
+        app:layout_constraintTop_toBottomOf="@+id/lostnf4" />
+
+    <LinearLayout
+        android:id="@+id/notice7"
+        android:layout_width="230dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/baseline_notice_24"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/notice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="@string/notice"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/complaint2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice7" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/forum"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="@string/forum"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/feesdetails6"
+        app:layout_constraintEnd_toStartOf="@+id/lostnf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lostnf4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/roomchange"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="center"
+        android:text="@string/room_change"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/feesdet"
+        app:layout_constraintEnd_toStartOf="@+id/feesdet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/feesdet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/feesdetails6"
+        android:layout_width="125dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/baseline_payment_24"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/feesdet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roomchange5"
+        app:layout_constraintTop_toBottomOf="@+id/lostnf" />
+
+    <TextView
+        android:id="@+id/feesdet"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/fees_details"
+        android:textColor="@color/purple"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/roomchange"
+        app:layout_constraintTop_toBottomOf="@+id/feesdetails6" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feesdet"
+        tools:context=".welcomepage">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="50dp">
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navi"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:layout_anchor="@+id/bottom"
+            app:layout_anchorGravity="top|center"
+            app:menu="@menu/bottom_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
